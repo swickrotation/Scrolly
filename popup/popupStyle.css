@@ -1,0 +1,12 @@
+/* Stylesheet for the Popup*/
+
+.sliderDiv {
+    width: 100%;
+}
+
+.slider {
+    width: 80%;
+    display: block;
+    margin: 0.5em 0 0 1em;
+}
+
