@@ -1,10 +1,5 @@
-//if (slider !== undefined && slider !== null) {
+var range = document.querySelector('.slider');
+var field = document.querySelector('.input');
 
-    var slider = document.getElementById("sliderValue");
-    var output = document.getElementById("output");
-    output.innerHTML = slider.value;
-
-    slider.oninput = function() {
-        output.innerHTML = this.value;
-    }
-//}
+range.addEventListener('input', function(setting) { field.value = setting.target.value; });
+field.addEventListener('input', function(setting) { range.value = setting.target.value; });
