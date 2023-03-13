@@ -5,7 +5,7 @@
     <title>autoScroll</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
@@ -15,11 +15,14 @@
 
     <div id="sliderDiv">
         <label>Scroll Speed
-            <input type="range" min="0" max="100" value="0" class="slider" id="sliderValue" />
+            <input type="range" min="0" max="10" value="0" class="slider" id="rangeValue" />
         </label>
-        <p>Value: <input class="input" type="number" min="0" max="100" value="0" /> </p>
-
+        <p>Value: <input class="input" type="number" min="0" max="10" value="0" id="fieldInput"/> </p>
     </div>
+    
+    <p>Hit Enter to Begin and again to pause. </p>
+    <p>Use the field or the slider to adjust the speed of the scrolling.</p>
+    <p>Scrolling must be paused during speed change in order to take effect.</p>
 
     <script type="text/javascript" src="js/autoScroll.js"></script>
 </body>
