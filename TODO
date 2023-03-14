@@ -2,5 +2,5 @@
 
 X    Create a testpage to load the extension onto
     Create the popup widget for the extension to test javascript
-    pretty it up with and input slider
+X    Pretty it up with an input slider
     add css styling
