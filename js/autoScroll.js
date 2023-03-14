@@ -16,20 +16,21 @@ var speed = document.getElementById('fieldInput')
 // external variables found above.
 
 function startScroll() {
-    var interval = 240 / speed.value;
+    var interval = 120 / speed.value;
     // The function does nothing if the speed is set to zero or less.
     if (speed.value <= 0) {
         return;
     }
-    // If the speed is non-zero, 
+    // If the speed is non-zero, the following scrolls until the bottom of the
+    // page is reached.
     else {
-        var id = setInterval(function () {
-            window.scrollBy(0,2);
+        var scroll  = setInterval(function () {
+            window.scrollBy(0,1);
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight){
             stopScroll();
             }
         }, interval);
-        return id;
+        return scroll;
     }
 }
 
